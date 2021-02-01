@@ -23,13 +23,16 @@
     </header>
     <div id=home_search>
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-        <p>En plein centre ville ou en pleine nature</p>
-        <div id="search">
-            <i class="fas fa-map-marker-alt"></i>
-            <form>
-                <input type="text" name="city" maxlength="" value="Marseille, France" required />
-                <input type="submit" value="Rechercher" id="search_button" />
-            </form>
+        <p id="subtitle">En plein centre ville ou en pleine nature</p>
+        <div id="search_bar">
+            <div id="locate">
+                <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div id="form_bloc">
+                <form>
+                    <input type="text" name="city" maxlength="60" value="Marseille, France" required id="search_field" /><input type="submit" value="Rechercher" id="search_button" />
+                </form>
+            </div>    
         </div>
         <div id="filters">
             <h3>Filtres</h3>
