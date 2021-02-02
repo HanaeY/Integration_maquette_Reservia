@@ -40,9 +40,24 @@ i {
     font-size: 1.2em;
 }
 
+.fa-star {
+    font-size: 0.7em;
+    color: #0065FC;
+}
+
 em {
     font-style: normal;
 }
+
+.price {
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 0.9em;
+}
+
+
 /* Header */ 
 
 header {
@@ -240,3 +255,109 @@ h1 {
     left: 8.5px;
     font-size: 0.9em;
 }
+
+/* Section hébergements */
+
+#accomodations {
+    display: flex;
+    margin-top: 40px;
+}
+
+#accomodation_results, aside {
+    border-radius: 17px;
+    padding: 20px 40px 20px 40px;
+}
+
+/* Résultats recherche */ 
+
+#accomodation_results {
+    margin-right: 40px;
+}
+
+#six_first_accomodation_results {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.accomodation {
+    width: 235px;
+    height: 190px;
+    border: 5px solid white;
+    border-radius: 17px;
+    /* à supprimer si pas utile
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    */
+}
+
+.accomodation h4, .accomodation p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.accomodation p {
+    font-size: 0.8em;
+    padding: 2px 0px 0px 0px;
+}
+
+#accomodation_cannebiere {
+    background: url(../images/accomodations/cannebiere.jpg) center;
+    background-size: contain;
+    background-position: top;
+    position: relative;
+}
+
+#accomodation_port {
+    background: url(../images/accomodations/port.jpg) center;
+    background-size: contain;
+    background-position: initial;
+    position: relative;
+}
+
+#accomodation_mouettes {
+    background: url(../images/accomodations/mouettes.jpg) center;
+    background-size:contain; 
+    background-position: initial;
+    position: relative;
+}
+
+#accomodation_mer {
+    background: url(../images/accomodations/mer.jpg) center;
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+}
+
+#accomodation_panier {
+    background: url(../images/accomodations/panier.jpg) center;
+    background-size: contain;
+    background-position: top;
+    position: relative;
+}
+
+#accomodation_amina {
+    background: url(../images/accomodations/amina.jpg) center;
+    background-size: cover;
+    background-position: 0px -95px;
+    position: relative;
+}
+
+.white_background {
+    background-color: white;
+    position: absolute;
+    top: 134px;
+    width: 225px;
+    padding-left: 10px;
+    padding-top: 5px;
+    border-radius: 0px 0px 10px 10px;
+}    
+
+/* les plus populaires */ 
+
+aside {
+    /*valeurs non prises en compte*/
+    width: 420px;
+    height: 625px;
+}
+
