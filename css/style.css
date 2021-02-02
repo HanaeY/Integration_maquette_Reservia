@@ -40,6 +40,9 @@ i {
     font-size: 1.2em;
 }
 
+em {
+    font-style: normal;
+}
 /* Header */ 
 
 header {
@@ -81,6 +84,7 @@ header span {
     border: none;
     font-family: "Raleway", sans-serif;
     font-weight: bold;
+    font-size: 0.9em;
     margin-left: 21.6px;
 }
 
@@ -106,13 +110,15 @@ h1 {
 }
 
 #search_button {
-    height: 52px;
+    height: 53px;
     width: 133px;
     background-color: #0065FC;
     border: 1px solid #0065FC;
     border-radius: 0px 16px 16px 0px;
     color: white;
-    font-weight: bold;
+    font-family: "Raleway", sans-serif;
+    font-size: 1em;
+    font-weight: bold;   
 }
 
 #search_field {
@@ -123,6 +129,9 @@ h1 {
     border-bottom:2px solid #F2F2F2;
     border-left :none;
     border-right: none;
+    font-family: "Raleway", sans-serif;
+    font-size: 1em;
+    font-weight: bold;
 }
 
 #locate {
@@ -132,3 +141,83 @@ h1 {
     border-radius: 16px 0px 0px 16px;
 }
 
+/* Filtres */
+
+#filters {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.filter {
+    margin-left: 24px;
+    display: flex;
+    align-items: center;
+    border: 2px solid #cccccc;
+    border-radius: 25px;
+    height: 47px;
+    position: relative;
+}
+
+.filter_icon_plus {
+    background-color: #DEEBFF;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    position: absolute;
+    left: -4px;
+}
+
+.filter i {
+    color: #0065FC;
+    position: absolute;
+}
+
+#bill {
+    top: 15px;
+    left: 13px;
+}
+#child {
+    top: 15px;
+    left: 17px;
+}
+#heart {
+    top: 16px;
+    left: 15px;
+}
+#dog {
+    top: 14px;
+    left: 15px;
+}
+
+.filter_text {
+    padding-left: 60px;
+    padding-right: 15px;
+}
+
+/* info nombre de logements dispo */
+
+#info  {
+    display: flex;
+    align-items: center;
+}
+
+#text_info {
+    margin-left: 12px;
+}
+
+#info_icon_plus {
+    height: 23px;
+    width: 23px;
+    border: 2px solid #F2F2F2;
+    border-radius: 25px;
+    position: relative;
+}
+
+#icon_info {
+    color: #0065FC;
+    position: absolute;
+    top: 5px;
+    left: 8.5px;
+    font-size: 0.9em;
+}
