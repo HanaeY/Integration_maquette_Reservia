@@ -62,7 +62,7 @@ h2 {
 }
 
 h4 {
-    font-size: 0.9em;
+    font-size: 1em;
 }
 
 
@@ -273,24 +273,29 @@ h1 {
 
 #accomodations {
     display: flex;
-    margin-top: 40px;
+    justify-content: space-between;
+    height: 625px;
 }
 
 #accomodation_results, aside {
     border-radius: 17px;
+    padding-top: 20px;
+}
+
+#accomodation_results {
+    max-width: 880px;
 }
 
 #accomodation_results h2 {
     margin-left: 40px;
 }
 
-/* Résultats recherche */ 
-
-#accomodation_results {
-    margin-right: 40px;
-    margin-bottom: 40px;
-    max-width: 880px;
+.accomodation p, .popular p {
+    font-size: 0.8em;
+    padding-top: 1px;
 }
+
+/* Résultats recherche */ 
 
 #six_first_accomodation_results {
     display: flex;
@@ -307,59 +312,54 @@ h1 {
     margin-bottom: 30px;
 }
 
-.accomodation h4, .accomodation p {
+.accomodation h4, .accomodation p, .acc_white_background div {
     margin-top: 0px;
     margin-bottom: 0px;
 }
 
-.accomodation p {
-    font-size: 0.8em;
-    padding: 2px 0px 0px 0px;
-}
-
 #accomodation_cannebiere {
-    background: url(../images/accomodations/cannebiere.jpg) center;
+    background-image: url(../images/accomodations/cannebiere.jpg);
     background-size: contain;
     background-position: 0px -1px;
     position: relative;
 }
 
 #accomodation_port {
-    background: url(../images/accomodations/port.jpg) center;
+    background-image: url(../images/accomodations/port.jpg);
     background-size: contain;
     background-position: 0px -1px;
     position: relative;
 }
 
 #accomodation_mouettes {
-    background: url(../images/accomodations/mouettes.jpg) center;
+    background-image: url(../images/accomodations/mouettes.jpg);
     background-size:contain; 
     background-position: initial;
     position: relative;
 }
 
 #accomodation_mer {
-    background: url(../images/accomodations/mer.jpg) center;
+    background-image: url(../images/accomodations/mer.jpg);
     background-size: cover;
     background-position: bottom;
     position: relative;
 }
 
 #accomodation_panier {
-    background: url(../images/accomodations/panier.jpg) center;
+    background-image: url(../images/accomodations/panier.jpg);
     background-size: contain;
     background-position: top;
     position: relative;
 }
 
 #accomodation_amina {
-    background: url(../images/accomodations/amina.jpg) center;
+    background-image: url(../images/accomodations/amina.jpg);
     background-size: cover;
     background-position: 0px -95px;
     position: relative;
 }
 
-.white_background {
+.acc_white_background {
     background-color: white;
     position: absolute;
     top: 134px;
@@ -371,15 +371,14 @@ h1 {
 }    
 
 #show_more_button {
-    padding: 0px;
-    margin: 0px;
+    padding-top: 20px;
+    margin: 0px 0px 0px 40px;
     background-color: #F2F2F2;
     color: black;
     border: none;
     font-family: "Raleway", sans-serif;
     font-weight: bold;
     font-size: 0.9em;
-    margin-left: 40px;
 }
 
 #show_more_button:hover {
@@ -388,9 +387,76 @@ h1 {
 
 /* les plus populaires */ 
 
-aside {
-    /*valeurs non prises en compte*/
-    width: 420px;
-    height: 625px;
+#most_popular_title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 40px 0px 40px;
+}
+
+#most_popular_title h3, .fa-chart-line {
+    font-size: 1.4em;
+}
+
+#three_first_popular {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 40px 0px 40px;
+}
+
+.popular {
+    width: 335px;
+    height: 135px;
+    border: 5px solid white;
+    border-radius: 17px;
+    box-shadow: 1px 2px 5px #cccccc;
+    margin-bottom: 30px;
+}
+
+#pop_soleil {
+    background-image: url(../images/accomodations/soleil_matin.jpg);
+    position: relative;
+    background-size: contain;
+    background-position: -37px 1px;
+}
+
+#pop_coeur {
+    background-image: url(../images/accomodations/coeur_eau.jpg);
+    position: relative;
+    background-size: contain;
+    background-position: -23px -1px;
+}
+
+#pop_bleu {
+    background-image: url(../images/accomodations/bleu_blanc.jpg);
+    position: relative;
+    background-size:133px;
+    background-position: -1px -30px;
+}
+
+.pop_white_background {
+    background-color: white;
+    padding-left: 20px;
+    padding-top: 5px;
+    border-radius: 0px 10px 10px 0px;
+    position: absolute;
+    top: 0px;
+    left: 127px;
+    width: 188px;
+    height: 133px;
+}
+
+.popular h4 {
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.popular p {
+    margin-top: 7px;
+    margin-bottom: 0px;
+}
+
+.pop_white_background div {
+    margin-top: 37px;
 }
 
