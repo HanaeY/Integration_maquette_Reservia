@@ -460,3 +460,91 @@ h1 {
     margin-top: 37px;
 }
 
+/* Secion activités */
+
+#entertainment_results {
+    display: flex;
+    justify-content: space-between;
+}
+
+#entertainment_results div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.entertainment {
+    width: 300px;
+    border-radius: 17px;
+    box-shadow: 1px 2px 5px #cccccc;
+    position: relative;
+}
+
+.entertainment h4 {
+    background-color: white;
+    padding: 18px 0px 18px 20px;
+    width: 280px;
+    border-radius: 0px 0px 17px 17px;
+    position: absolute;
+}
+
+#entertain_port h4, #entertain_calanques h4 {
+    top: 370px;
+}
+
+#entertain_fort h4 {
+    top: 158.5px;
+}
+
+#entertain_frioul h4 {
+    top: 89px;
+}
+
+#entertain_garde h4, #entertain_longchamp h4 {
+    top: 119.5px;
+}
+
+#entertain_port {
+    background-image: url(../images/entertainments/port.jpg);
+    background-position: -220px 0px;
+    height: 445px;
+}
+
+#entertain_fort {
+    background-image: url(../images/entertainments/fort_m.jpg);
+    background-size: cover;
+    background-position: 0px -100px;
+    height: 235px;
+}
+
+#entertain_frioul {
+    background-image: url(../images/entertainments/frioul.jpg);
+    background-size: cover;
+    background-position: 0px -15px;
+    height: 165px;
+}
+
+#entertain_calanques {
+    background-image: url(../images/entertainments/calanques_m_corrigee.jpg);
+    background-size: cover;
+    background-position: -190px 0px;
+    height: 445px;
+}
+
+#entertain_garde {
+    background-image: url(../images/entertainments/garde.jpg);
+    background-size: cover;
+    background-position: 0px 0px;
+    height: 195px;
+}
+
+#entertain_longchamp {
+    background-image: url(../images/entertainments/longchamp.jpg);
+    background-size: cover;
+    background-position: 0px -20px;
+    height: 195px;
+}
+
+
+
+
