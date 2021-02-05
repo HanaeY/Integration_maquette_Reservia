@@ -1,4 +1,4 @@
-/************ Police personnalisée ****************/ 
+/* Police personnalisée */ 
 
 @font-face {
     font-family: "Raleway";
@@ -306,14 +306,19 @@ h1 {
     padding-top: 1px;
 }
 
+#accomodations h2 {
+    display: none;
+}
+
 /************* Résultats recherche logement ***************/ 
 
 #accomodation_results {
     max-width: 880px;
 }
 
-#accomodation_results h2 {
+#accomodation_results h3 {
     margin-left: 40px;
+    font-size: 1.4em;
 }
 
 #accomodation_results_container {
