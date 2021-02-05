@@ -33,10 +33,6 @@ a {
     text-decoration: none;
 }
 
-button {
-    display: inline-block;
-}
-
 i {
     font-size: 1.2em;
 }
@@ -70,15 +66,15 @@ h4 {
 /******************** Header **********************/ 
 
 header {
-    display:flex;
-    justify-content: space-between;
+    display: flex;
+    justify-content: flex-end;
     align-items: flex-start;
-    flex-wrap: wrap;
     margin-top: 40px;
 }
 
-header div {
-    display: flex;
+header img {
+    margin: auto;
+    margin-left: 0px;
 }
 
 nav ul {
@@ -87,7 +83,7 @@ nav ul {
 
 nav ul li {
     font-size: 0.9em;
-    margin-right: 21.8px;
+    margin-right: 22px;
 }
 
 header a:hover {
@@ -97,8 +93,12 @@ header a:hover {
 }
 
 /* tirets blancs autour des éléments du menu pour obtenir une borture supp plus longue*/
-header span {
+.joker1, .joker2 {
     color: white;
+}
+
+.joker2 {
+    display: none;
 }
 
 header button, header button:disabled {
@@ -131,9 +131,14 @@ h1 {
 
 /* champ de recherche*/
 
+#search_icon {
+    display: none;
+}
+
 #search_bar {
     display: flex;
     align-items: center;
+    position: relative;
 }
 
 #search_button {
@@ -168,7 +173,7 @@ h1 {
     outline: none;
 }
 
-#search_bar i {
+.fa-map-marker-alt {
     padding: 14px 20px 14px 20px;
     background-color: #F2F2F2;
     border: 2px solid #F2F2F2;
@@ -648,6 +653,82 @@ footer ul {
 
 footer li {
     padding-bottom: 8px;
+}
+
+/********************  version mobile ***********************/
+
+@media all and (max-width: 480px) {
+    body {
+        padding: 0px;
+    }
+    /* header */
+
+    header {
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    header img {
+        margin-left: 20px;
+    }
+
+    header p {
+        margin-right: 20px;
+    }
+
+    header nav {
+        order: 3;
+        border-bottom: 3px solid #F2F2F2;
+        width: 100%;
+    }
+
+    nav ul {
+        justify-content: center;
+        margin-left: 0px;
+        padding-left: 0px;
+    }
+
+    nav ul li {
+        margin-right: 0px;
+    }
+
+    .joker2 {
+        display: unset;
+    }
+
+    header a:hover, header a:active {
+        border-top: none;
+        padding-top: 0px;
+        border-bottom: 3px solid #0065FC;
+        padding-bottom: 16px;
+    }
+
+    /* home_search */
+
+    h1, #subtitle, #search_bar {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #search_button {
+        display: none;
+    }
+
+    #search_icon {
+        display: unset;
+    }
+
+    .fa-search {
+        padding: 13px 14px 13.5px 14px;
+        -moz-border-radius: 16px;
+        -webkit-border-radius: 16px;
+        border-radius: 16px 16px;
+        border: 2px solid #0065FC;
+        background-color: #0065FC;
+        color: white;
+        position: absolute;
+        left: 253px;
+    }
 }
 
 
