@@ -429,7 +429,7 @@ h1 {
     font-size: 1.4em;
 }
 
-#three_most_popular {
+#popular_accomodation_container {
     display: flex;
     flex-direction: column;
     margin: 0px 40px 0px 40px;
@@ -510,14 +510,14 @@ aside article img {
 #entertainments h2 {
     margin-bottom: 0px;
 }
-#entertainment_results {
+#entertainments_container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
 /* colonne à deux activités*/
-#entertainment_results div {
+#entertainments_container div {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -649,6 +649,5 @@ footer ul {
 footer li {
     padding-bottom: 8px;
 }
-
 
 
