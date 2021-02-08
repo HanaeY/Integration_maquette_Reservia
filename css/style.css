@@ -86,7 +86,7 @@ nav ul li {
     margin-right: 22px;
 }
 
-header a:hover {
+header a:hover, header a:active {
     color:  #0065FC;
     border-top:  2px solid #0065FC;
     padding-top: 54px;
@@ -193,7 +193,6 @@ h1 {
 
 #filters h3 {
     padding-left: 10px;
-    margin-top: 18px;
 }
 
 #filters ul {
@@ -657,20 +656,156 @@ footer li {
     padding-bottom: 8px;
 }
 
-/****************  version mobile portrait ******************/
-
-@media all and (max-width: 480px) {
+/***************  version desktop réduit ****************/
+/* lorsque largeur < logements + populaires */
+@media all and (max-width: 1350px) {
     body {
         padding: 0px;
         width: 100%;
     }
 
-    header img, header p, h1, #subtitle, #filters, #info, #entertainments h2 {
+    header p, h1, #subtitle, #filters, #info, #entertainments h2, #search_bar, #aside_title, #popular_accomodation_container, #entertainments_container {
         margin-left: 20px;
         margin-right: 20px;
     }
+
     /* header */
 
+    header {
+        margin-top: 20px;
+    }
+
+    header img {
+        margin-left: 20px;
+    }
+
+    /* filtres */
+
+    #filters h3 {
+        padding-left: 10px;
+        margin: 30px 20px 0px 0px;
+    }
+
+    #filters ul {
+        padding-left: 0px;
+    }
+
+    .filter {
+        margin: 13px 13px 0px 0px;
+    }
+
+    .filter p {
+        padding-right: 10px;
+        padding-left: 50px;
+    }
+
+    #info {
+        margin-top: 0px;
+    }
+
+   /* hébergements */
+
+   #accomodations {
+        flex-direction: column-reverse;
+        /*width: 100%;
+        margin: auto;*/
+    }
+
+    #accomodations {
+        margin-bottom: 20px;
+    }
+
+    #accomodation_results, aside {
+        border-radius: 0px;
+    }
+
+    /* hébergements populaires */ 
+
+    #aside_title {
+        width: 265px;
+    }
+
+    #popular_accomodation_container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    aside article {
+        width: 295px;
+        margin-right: 20px;
+        margin-bottom: 22px;
+    }    
+
+    /* hébergements résultats recherche */
+
+    #accomodation_results, #accomodation_results button {
+        background-color: white;
+    }
+
+    #accomodation_results {
+        justify-content: flex-start;
+    }
+
+    #accomodation_results article {
+        margin-bottom: 13px;
+    }
+
+    /* activités */
+
+    #entertainments_container {
+        justify-content: flex-start;
+    }
+
+    #entertainments article {
+        margin-right: 20px;
+    }
+
+    #entertain_fort, #entertain_frioul, #entertain_garde, #entertain_longchamp {
+        height: 212.5px;
+    }
+
+    #entertain_fort h4 {
+        top: 140px;
+    }
+    
+    #entertain_frioul h4 {
+        top: 137px;
+    }
+    
+    #entertain_garde h4, #entertain_longchamp h4 {
+        top: 136px;
+    }
+
+    /* footer */
+
+    footer {
+        padding: 20px 0px 20px 0px;
+    }
+
+    #footer_container {
+        max-width: 1023px;
+        padding-left: 20px;
+        flex-wrap: nowrap;
+        font-size: 0.9em;
+    }
+}
+
+/***************  version tablette paysage ***************/
+/* iPad paysage : 1024px */
+@media all and (max-width: 1024px) {
+    /* hébergements */
+   
+}
+
+/*****  version mobile paysage et tablette portrait *****/
+/* iphone X paysage : 812px */
+@media all and (max-width: 812px) {
+    
+}
+
+/* modification du header lorsque la largeur n'est pas suffisante pour le nav et le bouton*/
+@media all and (max-width: 580px) {
     header {
         justify-content: space-between;
         flex-wrap: wrap;
@@ -703,6 +838,22 @@ footer li {
         border-bottom: 3px solid #0065FC;
         padding-bottom: 16px;
     }
+
+}
+
+/**************  version mobile portrait ****************/
+
+@media all and (max-width: 480px) {
+    body {
+        padding: 0px;
+        width: 100%;
+    }
+
+    header img, header p, h1, #subtitle, #filters, #info, #entertainments h2 {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    /* header */
 
     /* home_search */
 
@@ -880,18 +1031,10 @@ footer li {
     }
 }
 
-/****************  version mobile paysage ******************/
-
-@media all and (max-width: 740px) {
-    
-}
 
 
-/***************  version tablette portrait ****************/
 
-@media all and (max-width: 768px) {
 
-}
 
 
 
