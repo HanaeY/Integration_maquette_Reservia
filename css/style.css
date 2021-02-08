@@ -131,13 +131,9 @@ h1 {
 
 /* champ de recherche*/
 
-#search_icon {
-    display: none;
-}
-
 #search_bar {
     display: flex;
-    align-items: center;
+    align-items:baseline;
     position: relative;
 }
 
@@ -154,12 +150,17 @@ h1 {
     font-size: 1em;
     font-weight: bold;  
     cursor: pointer; 
+    margin-left: 0px;
+}
+
+.fa-search {
+    display: none;
 }
 
 #search_field {
-    height: 47px;
-    min-width: 200px;
-    padding: 0px 10px 0px 10px;
+    height: 46px;
+    width: 203px;
+    padding: 0px 10px 0px 17px;
     border-top:2px solid #F2F2F2;
     border-bottom:2px solid #F2F2F2;
     border-left :none;
@@ -174,7 +175,7 @@ h1 {
 }
 
 .fa-map-marker-alt {
-    padding: 14px 20px 14px 20px;
+    padding: 12px 18px 15px 18px;
     background-color: #F2F2F2;
     border: 2px solid #F2F2F2;
     -moz-border-radius: 16px 0px 0px 16px;
@@ -187,12 +188,12 @@ h1 {
 #filters {
     display: flex;
     align-items: center;
-    margin-top: 18px;
     flex-wrap: wrap;
 }
 
 #filters h3 {
     padding-left: 10px;
+    margin-top: 18px;
 }
 
 #filters ul {
@@ -202,6 +203,7 @@ h1 {
 
 .filter {
     margin-left: 24px;
+    margin-top: 18px;
     display: flex;
     align-items: center;
     border: 2px solid #cccccc;
@@ -279,7 +281,7 @@ h1 {
 }
 
 #info p {
-    margin-left: 12px;
+    margin-left: 10px;
 }
 
 #info div {
@@ -295,7 +297,7 @@ h1 {
 .fa-info {
     color: #0065FC;
     position: absolute;
-    top: 5px;
+    top: 4.5px;
     left: 8.5px;
     font-size: 0.9em;
 }
@@ -655,25 +657,24 @@ footer li {
     padding-bottom: 8px;
 }
 
-/********************  version mobile ***********************/
+/****************  version mobile portrait ******************/
 
 @media all and (max-width: 480px) {
     body {
         padding: 0px;
+        width: 100%;
+    }
+
+    header img, header p, h1, #subtitle, #filters, #info, #entertainments h2 {
+        margin-left: 20px;
+        margin-right: 20px;
     }
     /* header */
 
     header {
         justify-content: space-between;
         flex-wrap: wrap;
-    }
-
-    header img {
-        margin-left: 20px;
-    }
-
-    header p {
-        margin-right: 20px;
+        margin-top: 20px;
     }
 
     header nav {
@@ -705,21 +706,20 @@ footer li {
 
     /* home_search */
 
-    h1, #subtitle, #search_bar {
-        margin-left: 20px;
-        margin-right: 20px;
+    #search_field {
+        width: 220px;
     }
 
-    #search_button {
+    #search_button span {
         display: none;
     }
 
-    #search_icon {
+    .fa-search {
         display: unset;
     }
 
-    .fa-search {
-        padding: 13px 14px 13.5px 14px;
+    #search_button {
+        width: 50px;
         -moz-border-radius: 16px;
         -webkit-border-radius: 16px;
         border-radius: 16px 16px;
@@ -727,8 +727,171 @@ footer li {
         background-color: #0065FC;
         color: white;
         position: absolute;
-        left: 253px;
+        left: 280px;
+    }
+
+    #search_field {
+        padding: 0px 10px 0px 17px;
+    }
+
+    /* filtres */
+
+    #filters {
+        align-items:flex-end;
+    }
+    
+    #filters h3 {
+        margin : 30px 0px 5px 0px; 
+    }
+    
+    #filters ul {
+        padding-left: 0px;
+        margin-top: 0px;
+    }
+
+    .filter {
+        margin: 13px 13px 0px 0px;
+    }
+
+    .filter p {
+        padding-right: 15px;
+        padding-left: 55px;
+    }
+
+    #info {
+        margin-top: 0px;
+        align-items:flex-start;
+    }
+
+    #info div {
+        flex-shrink: 0;
+        margin-top: 15px;
+    }
+
+    /* hébergements */
+
+    #accomodations {
+        flex-direction: column-reverse;
+        width: 100%;
+        margin: auto;
+    }
+
+    #accomodation_results, aside {
+        border-radius: 0px;
+    }
+
+    #aside_title {
+        margin: 0px;
+        justify-content: space-between;
+        padding: 0px 20px 0px 20px;
+    }
+
+    #popular_accomodation_container {
+        margin: 0px;
+        align-items: center;
+        padding-bottom: 30px;
+    }
+
+    aside article {
+        margin-bottom: 10px;
+    }
+
+    #accomodation_results, #accomodation_results button {
+        background-color: white;
+    }
+
+    #accomodation_results h3 {
+        margin-left: 20px;
+        margin-top: 0px;
+    }
+
+    #accomodation_results article {
+        width: 335px;
+        height: 190px;
+    }
+
+    .accomodation_content {
+        width: 330px;
+        top: 116px;
+        left: -1px;
+    }
+
+    #accomodation_cannebiere img, #accomodation_port img, #accomodation_mouettes img {
+        top: -54px;
+    }
+    
+    #accomodation_mer img {
+        top: -98px;
+    }
+    
+    #accomodation_panier img {
+        top: -35px;
+    }
+    
+    #accomodation_amina img {
+        top: -195px;
+    }
+
+    #accomodation_results button {
+        margin: 0px 0px 20px 20px;
+        padding-top: 0px;
+    }
+
+    /* activités */
+
+    #entertainments_container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #entertainments article {
+        width: 345px;
+        height: 190px;
+    }
+
+    #entertainments article h4 {
+        width: 340px;
+        top: 115px;
+    }
+
+    #entertain_port img {
+        width: 100%;
+        left: 0px;
+    }
+
+    #entertain_fort img {
+        max-width: 100%;
+        top: -165px;
+    }
+    
+    #entertain_calanques img {
+        width: 100%;
+        left: 0px;
+    }
+
+    #entertain_garde img {
+        max-width: 100%;
+        top: -15px;
+    }
+
+    #entertain_longchamp img {
+        max-width: 100%;
+        top: -35px;
     }
 }
+
+/****************  version mobile paysage ******************/
+
+@media all and (max-width: 740px) {
+    
+}
+
+
+/***************  version tablette portrait ****************/
+
+@media all and (max-width: 768px) {
+
+}
+
 
 
