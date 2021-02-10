@@ -1,11 +1,3 @@
-/* Police personnalisée */ 
-
-@font-face {
-    font-family: "Raleway";
-    src: url(../polices/Raleway/Raleway-VariableFont_wght.ttf) format("truetype"), 
-    url(../polices/Raleway/static/Raleway-Medium.ttf) format("truetype");
-}
-
 /********* Styles réccurents sur la page *********/
 
 body {
@@ -649,7 +641,7 @@ footer li {
 }
 
 /********************* MEDIA QUERIES *********************/
-/*desktop fenêtre réduite
+/*desktop fenêtre réduite (max : 1350px)
 tablette paysage (max 1024px)
 tablette portrait/mobile paysage (max 812px)
 mobile portrait (max : 667px)
