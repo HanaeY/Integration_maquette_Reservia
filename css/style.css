@@ -276,6 +276,10 @@ h1 {
     margin-bottom: 0px;
 }
 
+#info h3 {
+    display: none;
+}
+
 #info p {
     margin-left: 10px;
 }
