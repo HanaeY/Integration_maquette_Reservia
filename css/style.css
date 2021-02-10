@@ -661,38 +661,17 @@ footer li {
 /***************  version desktop réduit ****************/
 /* lorsque largeur < logements + populaires */
 @media all and (max-width: 1350px) {
-    body {
-        padding: 0px;
-        width: 100%;
-    }
 
-    header p, h1, #subtitle, #filters, #info, #entertainments h2, #search_bar, #popular_accomodation_container, #entertainments_container {
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
-    header img, #aside_title {
-        margin-left: 20px;
-    }
-
-   /* hébergements section */
+   /* section hébergements */
 
    #accomodations {
         flex-direction: column-reverse;
     }
 
-    #accomodations {
-        margin-bottom: 20px;
-    }
-
-    #accomodation_results, aside {
-        border-radius: 0px;
-    }
-
     /* hébergements populaires */ 
 
-    #aside_title {
-        width: 265px;
+    aside {
+        max-width: 1060px;
     }
 
     #popular_accomodation_container {
@@ -715,8 +694,6 @@ footer li {
 
     #accomodation_results {
         max-width: 956px;
-        margin-left: 20px;
-        margin-right: 20px;
     }
 
     #accomodation_results, #accomodation_results button {
@@ -728,8 +705,40 @@ footer li {
         justify-content: flex-start;
     }
 
-    #accomodation_results article {
+    /*#accomodation_results article {
         margin-right: 70px;
+    }*/
+
+    #accomodation_results article {
+        width: 292px;
+        height: 190px;
+        margin-right: 10px;
+    }
+
+    .accomodation_content {
+        width: 330px;
+        top: 116px;
+        left: -1px;
+    }
+
+    #accomodation_cannebiere img, #accomodation_port img, #accomodation_mouettes img {
+        top: -54px;
+    }
+    
+    #accomodation_mer img {
+        top: -98px;
+    }
+    
+    #accomodation_panier img {
+        top: -35px;
+    }
+    
+    #accomodation_amina img {
+        top: -195px;
+    }
+
+    #accomodation_results button {
+        margin: 0px 0px 20px 20px;
     }
 
     /* activités */
@@ -769,9 +778,33 @@ footer li {
     }
 }
 
+/************************ breakpoints intermédiaire **************************/
+/* Ajustement section activités */
+
+@media all and (max-width: 1344px) and (min-width: 1025px) {
+    #entertainments_container div:nth-child(4) {
+        flex-direction: row;
+    }
+}
+
 /***************  version tablette paysage ***************/
 /* iPad paysage : 1024px */
 @media all and (max-width: 1024px) {
+
+    /* éléments généraux */
+    body {
+        padding: 0px;
+        width: 100%;
+    }
+
+    header p, h1, #subtitle, #filters, #info, #entertainments h2, #search_bar, #popular_accomodation_container, #accomodation_results, #entertainments_container {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    header img, #aside_title {
+        margin-left: 20px;
+    }
 
     /* header */
 
@@ -783,7 +816,24 @@ footer li {
         margin-left: 20px;
     }
 
+    /*section hébergements */
+
+    #accomodations {
+        margin-bottom: 20px;
+    }
+
+    #accomodation_results, aside {
+        border-radius: 0px;
+    }
     /* hébergements populaires */
+
+    aside {
+        max-width: 100%;
+    }
+
+    #aside_title {
+        width: 265px;
+    }
     
     #popular_accomodation_container {
         justify-content: space-between;
@@ -795,7 +845,7 @@ footer li {
     /* hébergements */
    
     #accomodation_results {
-        max-width: 1024px;
+        max-width: 100%;
     }
 
     #accomodation_results h3 {
@@ -808,99 +858,83 @@ footer li {
     }
 
     #accomodation_results article {
-        width: 292px;
-        height: 190px;
         margin-right: 0px;
-    }
-
-    .accomodation_content {
-        width: 330px;
-        top: 116px;
-        left: -1px;
-    }
-
-    #accomodation_cannebiere img, #accomodation_port img, #accomodation_mouettes img {
-        top: -54px;
-    }
-    
-    #accomodation_mer img {
-        top: -98px;
-    }
-    
-    #accomodation_panier img {
-        top: -35px;
-    }
-    
-    #accomodation_amina img {
-        top: -195px;
     }
 
     #accomodation_results button {
-        margin: 0px 0px 20px 20px;
         padding-top: 0px;
     }
+}
+
+@media all and (max-width: 1024px) and (min-width: 813px) {
+
+        /* activités */ 
+
+        #entertainments h2 {
+            margin-bottom: 10px;
+        }
     
-    /* activités */ 
+        #entertainments_container {
+            justify-content: space-between;
+        }
+    
+        #entertainments article {
+            width: 302px;
+            height: 190px;
+            margin: 0px 0px 22px 0px;
+        }
+    
+        #entertainments article h4 {
+            width: 340px;
+            top: 115px;
+        }
+    
+        #entertain_port img {
+            width: 100%;
+            left: 0px;
+        }
+    
+        #entertain_fort img {
+            max-width: 100%;
+            top: -165px;
+        }
+        
+        #entertain_calanques img {
+            width: 100%;
+            left: 0px;
+        }
+    
+        #entertain_garde img {
+            max-width: 100%;
+            top: -15px;
+        }
+    
+        #entertain_longchamp img {
+            max-width: 100%;
+            top: -35px;
+        }
 
-    #entertainments h2 {
-        margin-bottom: 10px;
-    }
-
-    #entertainments_container {
-        justify-content: space-between;
-    }
-
-    #entertainments article {
-        margin-right: 0px;
-    }
-
-    #entertainments_container div:nth-child(4) a:nth-child(1) {
-        margin-right: 42px;
-    }
-
-}
-
-/************************ breakpoints intermédiaire **************************/
-/* Ajustement section activités */
-
-@media all and (max-width: 1344px) and (min-width: 1021px) {
-    #entertainments_container div:nth-child(4) {
+    #entertainments_container div:nth-child(2), #entertainments_container div:nth-child(4) {
         flex-direction: row;
+        flex: 2;
+    }
+
+    #entertainments_container a:nth-child(1), #entertainments_container a:nth-child(3) {
+        flex: 1;
     }
 }
-
-/*@media all and (max-width: 1035px) {
-    #entertainments_container {
-        justify-content: flex-start;
-    }
-
-    #entertainments article {
-        margin-right: 30px;
-    }
-}
-
-@media all and (max-width: 743px) and (min-width: 668px) {
-    #entertainments article {
-        margin-right: 10px;
-        width: 280px;
-    }
-}*/
 
 /*************  version mobile paysage et tablette portrait *************/
-/* Pixel2XL paysage : 823px */
 
-@media all and (max-width: 1020px) and (min-width: 710px){
-    #accomodations article, aside article {
-        margin-right: 30px;
-    }  
-}
+@media all and (max-width: 812px) {
 
-@media all and (max-width: 1020px) {
     /* filtres */
+
     #filters {
         flex-direction: column;
         align-items: flex-start;
     }
+
     #filters h3 {
         padding-top: 0px;
         margin : 30px 0px 0px 0px; 
@@ -935,6 +969,17 @@ footer li {
         margin-right: 30px;
         padding-left: 20px;
     }
+}
+
+@media all and (max-width: 812px) and (min-width: 668px) {
+
+    #entertainments h2 {
+        margin-bottom: 10px;
+    }
+
+    #accomodations article, aside article, #entertainments_container article {
+        margin-right: 30px;
+    }    
 }
 
 /************************ breakpoint intermédiaire **************************/
@@ -980,7 +1025,7 @@ footer li {
 /**************  version mobile portrait ****************/
 /* + petites tablettes portrait */
 
-@media all and (max-width: 709px) {
+@media all and (max-width: 667px) {
     body {
         width: auto;
     }
@@ -1058,7 +1103,6 @@ footer li {
         padding: 0px;
         flex-direction: column;
         align-items: center;
-        background-color: red;
     }
 
     aside article {
@@ -1097,12 +1141,16 @@ footer li {
 
     /* activités */
 
+    #entertainments h2 {
+        margin-bottom: 10px;
+    }
+
     #entertainments_container {
         flex-direction: column;
         align-items: center;
         background-color: red;
         margin: 0px;
-        height: 1240px;
+        height: auto;
     }
 
     #entertainments article {
@@ -1140,11 +1188,7 @@ footer li {
         max-width: 100%;
         top: -35px;
     }
-
-    #entertainments_container div:nth-child(4) a:nth-child(1) {
-        margin-right: 0px;
-    }
-
+    
     /* footer */
 
     footer {
