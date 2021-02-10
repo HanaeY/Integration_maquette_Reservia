@@ -63,46 +63,41 @@ h4 {
 }
 
 
-/******************** Header **********************/ 
+/************************ Header **************************/ 
 
 header {
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
-    margin-top: 40px;
 }
 
 header img {
     margin: auto;
+    margin-top: 50px;
     margin-left: 0px;
 }
 
 nav ul {
     display: flex;
+    margin-top: 0px;
 }
 
 nav ul li {
     font-size: 0.9em;
     margin-right: 22px;
+    padding: 54px 20px 0px 20px;
+}
+
+header li:hover, header li:active {
+    border-top:  2px solid #0065FC;
 }
 
 header a:hover, header a:active {
     color:  #0065FC;
-    border-top:  2px solid #0065FC;
-    padding-top: 54px;
-}
-
-/* tirets blancs autour des éléments du menu pour obtenir une borture supp plus longue*/
-.joker1, .joker2 {
-    color: white;
-}
-
-.joker2 {
-    display: none;
 }
 
 header button, header button:disabled {
-    padding: 0px;
+    padding: 38px 0px 0px 0px;
     margin: 0px;
     background-color: white;
     color: #0065FC;
@@ -117,7 +112,7 @@ header button:hover {
     cursor: pointer;
 }
 
-/************** Section de recherche - home_search **************/
+/************ Section de recherche - home_search ************/
 
 h1 {
     font-size: 1.4em;
@@ -303,7 +298,7 @@ h1 {
     font-size: 0.9em;
 }
 
-/********* Section hébergements globale **********/
+/****************** Section hébergements *******************/
 
 #accomodations {
     display: flex;
@@ -330,7 +325,7 @@ h1 {
     display: none;
 }
 
-/************* Résultats recherche logement ***************/ 
+/* Résultats recherche hébergement */ 
 
 #accomodation_results {
     max-width: 880px;
@@ -370,9 +365,6 @@ h1 {
     width: 231px;
     height: 75px;
     padding-left: 10px;
-    -moz-border-radius: 0px 0px 10px 10px;
-    -webkit-border-radius: 0px 0px 10px 10px;
-    border-radius: 0px 0px 10px 10px;
 }  
 
 .accomodation_content p, .accomodation_content div {
@@ -424,7 +416,7 @@ h1 {
     cursor: pointer;
 }
 
-/************** les plus populaires ***************/ 
+/* les plus populaires */ 
 
 #aside_title {
     display: flex;
@@ -462,9 +454,6 @@ aside article {
     background-color: white;
     padding-left: 20px;
     padding-top: 5px;
-    -moz-border-radius: 0px 10px 10px 0px;
-    -webkit-border-radius: 0px 10px 10px 0px;
-    border-radius: 0px 10px 10px 0px;
     position: absolute;
     top: -1px;
     left: 128px;
@@ -509,7 +498,7 @@ aside article img {
     left: -1px;
 }
 
-/*************** Section activités ****************/
+/******************* Section activités ********************/
 
 #entertainments {
     margin-bottom: 60px;
@@ -548,9 +537,6 @@ aside article img {
     background-color: white;
     padding: 18px 0px 18px 20px;
     width: 280px;
-    -moz-border-radius: 0px 0px 17px 17px;
-    -webkit-border-radius: 0px 0px 17px 17px;
-    border-radius: 0px 0px 17px 17px;
     position: absolute;
 }
 
@@ -630,7 +616,7 @@ aside article img {
     max-width: 100%;
     top: -20px;
 }
-/******************** Footer *********************/
+/************************* Footer **************************/
 
 footer {
     width: 100%;
@@ -658,8 +644,16 @@ footer li {
     padding-bottom: 8px;
 }
 
-/***************  version desktop réduit ****************/
-/* lorsque largeur < logements + populaires */
+/********************* MEDIA QUERIES *********************/
+/*desktop fenêtre réduite
+tablette paysage (max 1024px)
+tablette portrait/mobile paysage (max 812px)
+mobile portrait (max : 667px)
+petit mobile (max 320px)*/
+
+/**************** desktop fenêtre réduite *****************/
+/* body width < width logements + widh populaires */
+
 @media all and (max-width: 1350px) {
 
    /* section hébergements */
@@ -704,10 +698,6 @@ footer li {
         width: 100%;
         justify-content: flex-start;
     }
-
-    /*#accomodation_results article {
-        margin-right: 70px;
-    }*/
 
     #accomodation_results article {
         width: 292px;
@@ -778,17 +768,8 @@ footer li {
     }
 }
 
-/************************ breakpoints intermédiaire **************************/
-/* Ajustement section activités */
+/******************** tablette paysage ********************/
 
-@media all and (max-width: 1344px) and (min-width: 1025px) {
-    #entertainments_container div:nth-child(4) {
-        flex-direction: row;
-    }
-}
-
-/***************  version tablette paysage ***************/
-/* iPad paysage : 1024px */
 @media all and (max-width: 1024px) {
 
     /* éléments généraux */
@@ -806,17 +787,7 @@ footer li {
         margin-left: 20px;
     }
 
-    /* header */
-
-    header {
-        margin-top: 20px;
-    }
-
-    header img {
-        margin-left: 20px;
-    }
-
-    /*section hébergements */
+    /* section hébergements */
 
     #accomodations {
         margin-bottom: 20px;
@@ -842,7 +813,7 @@ footer li {
     aside article {
         margin-right: 0px;
     }
-    /* hébergements */
+    /* hébergements résultats */
    
     #accomodation_results {
         max-width: 100%;
@@ -924,7 +895,7 @@ footer li {
     }
 }
 
-/*************  version mobile paysage et tablette portrait *************/
+/*********** tablette portrait, mobile paysage ************/
 
 @media all and (max-width: 812px) {
 
@@ -958,9 +929,9 @@ footer li {
         margin-top: 0px;
     }
     /* section hébergements */
+
     #popular_accomodation_container, #accomodation_results_container {
         justify-content: flex-start;
-        background-color: yellow;
     }
 
     /* footer */ 
@@ -982,11 +953,17 @@ footer li {
     }    
 }
 
-/************************ breakpoint intermédiaire **************************/
-/* ajustement header lorsque width trop petit */
-/*à supprimer éventuellement??? */
+/*******************  mobile portrait *********************/
+/* + petites tablettes portrait */
 
-@media all and (max-width: 580px) {
+@media all and (max-width: 667px) {
+
+    body {
+        width: auto;
+    }
+
+    /* header */
+
     header {
         justify-content: space-between;
         flex-wrap: wrap;
@@ -995,42 +972,37 @@ footer li {
 
     header nav {
         order: 3;
-        border-bottom: 3px solid #F2F2F2;
+        /*border-bottom: 3px solid #F2F2F2;*/
         width: 100%;
     }
 
     nav ul {
-        justify-content: center;
-        margin-left: 0px;
         padding-left: 0px;
+        justify-content: center;
+        width: 100%;
     }
 
     nav ul li {
-        margin-right: 0px;
+        margin: 0px;
+        padding: 30px 30px 16px 30px;
+        border-bottom: 3px solid #F2F2F2;
+        text-align: center;
     }
 
-    .joker2 {
-        display: unset;
+    #acc_link {
+        flex-grow: 1;
     }
 
-    header a:hover, header a:active {
-        border-top: none;
-        padding-top: 0px;
+    #entert_link {
+        flex-grow: 2.5;
+    }
+
+    header li:hover, header li:active {
+        border-top:  none;
         border-bottom: 3px solid #0065FC;
         padding-bottom: 16px;
+
     }
-
-}
-
-/**************  version mobile portrait ****************/
-/* + petites tablettes portrait */
-
-@media all and (max-width: 667px) {
-    body {
-        width: auto;
-    }
-
-    /* header */
 
     /* home_search */
 
@@ -1127,7 +1099,6 @@ footer li {
     #accomodation_results_container {
         flex-direction: column;
         align-items: center;
-        background-color: red;
     }
 
     #accomodation_results article {
@@ -1148,7 +1119,6 @@ footer li {
     #entertainments_container {
         flex-direction: column;
         align-items: center;
-        background-color: red;
         margin: 0px;
         height: auto;
     }
@@ -1196,8 +1166,8 @@ footer li {
     }
 }
 
-/****************** plus petits mobiles portrait ****************/
-/* iPhone 5SE : 320px et Galaxy Fold : 280px */
+/****************** petits mobiles portrait ****************/
+
 @media all and (max-width: 320px) {
     #subtitle {
         line-height: 1.5em;
@@ -1227,9 +1197,6 @@ footer li {
         width: 233px;
         height: 85px;
         padding-left: 10px;
-        -moz-border-radius: 0px 0px 10px 10px;
-        -webkit-border-radius: 0px 0px 10px 10px;
-        border-radius: 0px 0px 10px 10px;
     }
 
     aside article h4 {
