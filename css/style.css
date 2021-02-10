@@ -976,7 +976,6 @@ petit mobile (max 320px)*/
 
     header nav {
         order: 3;
-        /*border-bottom: 3px solid #F2F2F2;*/
         width: 100%;
     }
 
@@ -991,14 +990,7 @@ petit mobile (max 320px)*/
         padding: 30px 30px 16px 30px;
         border-bottom: 3px solid #F2F2F2;
         text-align: center;
-    }
-
-    #acc_link {
-        flex-grow: 1;
-    }
-
-    #entert_link {
-        flex-grow: 2.5;
+        flex: 1;
     }
 
     header li:hover, header li:active {
