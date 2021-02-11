@@ -61,7 +61,6 @@ header {
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
-    margin-top: 16px;
 }
 
 header img {
@@ -128,9 +127,9 @@ h1 {
 
 #search_button {
     height: 50px;
-    width: 133px;
+    width: 135px;
     background-color: #0065FC;
-    border: 1px solid #0065FC;
+    border-color: transparent;
     -moz-border-radius: 0px 16px 16px 0px;
     -webkit-border-radius: 0px 16px 16px 0px;
     border-radius: 0px 16px 16px 0px;
@@ -164,9 +163,8 @@ h1 {
 }
 
 .fa-map-marker-alt {
-    padding: 12px 18px 15px 18px;
+    padding: 14px 20px 17px 20px;
     background-color: #F2F2F2;
-    border: 2px solid #F2F2F2;
     -moz-border-radius: 16px 0px 0px 16px;
     -webkit-border-radius: 16px 0px 0px 16px;
     border-radius: 16px 0px 0px 16px;
@@ -981,7 +979,7 @@ petit mobile (max 320px)*/
 
     nav ul li {
         margin: 0px;
-        padding: 30px 30px 16px 30px;
+        padding: 20px 30px 16px 30px;
         border-bottom: 3px solid #F2F2F2;
         text-align: center;
         flex: 1;
@@ -1015,10 +1013,10 @@ petit mobile (max 320px)*/
 
     #search_button {
         width: 50px;
+        border-color: transparent;
         -moz-border-radius: 16px;
         -webkit-border-radius: 16px;
         border-radius: 16px 16px;
-        border: 2px solid #0065FC;
         background-color: #0065FC;
         color: white;
         position: absolute;
