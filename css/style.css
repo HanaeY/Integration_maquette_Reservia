@@ -1151,11 +1151,10 @@ petit mobile (max 320px)*/
     
     /* footer */
 
-    footer {
+    #footer_container {
         flex-direction: column;
     }
 }
-
 /****************** petits mobiles portrait ****************/
 
 @media all and (max-width: 320px) {
