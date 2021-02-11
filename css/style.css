@@ -50,11 +50,6 @@ h2 {
     font-size: 1.4em;
 }
 
-h4 {
-    font-size: 1em;
-}
-
-
 /************************ Header **************************/ 
 
 header {
@@ -658,12 +653,12 @@ petit mobile (max 320px)*/
         flex-direction: column-reverse;
     }
 
-    /* hébergements populaires */ 
-
-    aside {
+    aside, #accomodation_results {
         width: 100%; 
         margin: auto; 
     }
+
+    /* hébergements populaires */ 
 
     #popular_accomodation_container {
         flex-direction: row;
@@ -682,11 +677,6 @@ petit mobile (max 320px)*/
     }
 
     /* hébergements résultats */
-
-    #accomodation_results {
-        width: 100%; 
-        margin: auto; 
-    }
 
     #accomodation_results, #accomodation_results button {
         background-color: white;
@@ -809,11 +799,12 @@ petit mobile (max 320px)*/
     #accomodation_results, aside {
         border-radius: 0px;
     }
-    /* hébergements populaires */
 
-    aside {
+    aside, #accomodation_results {
         max-width: 100%;
     }
+
+    /* hébergements populaires */
 
     #aside_title {
         width: 265px;
@@ -823,10 +814,6 @@ petit mobile (max 320px)*/
         margin-right: 0px;
     }
     /* hébergements résultats */
-   
-    #accomodation_results {
-        max-width: 100%;
-    }
 
     #accomodation_results h3 {
         margin-left: 20px;
@@ -844,47 +831,47 @@ petit mobile (max 320px)*/
 
 @media all and (max-width: 1024px) and (min-width: 813px) {
 
-        /* activités */ 
+    /* activités */
 
-        #entertainments h2 {
-            margin-bottom: 10px;
-        }
+    #entertainments h2 {
+        margin-bottom: 10px;
+    }
+
+    #entertainments article {
+        width: 302px;
+        height: 190px;
+        margin: 0px 0px 22px 0px;
+    }
+
+    #entertainments article h4 {
+        width: 340px;
+        top: 115px;
+    }
+
+    #entertain_port img {
+        width: 100%;
+        left: 0px;
+    }
+
+    #entertain_fort img {
+        max-width: 100%;
+        top: -165px;
+    }
     
-        #entertainments article {
-            width: 302px;
-            height: 190px;
-            margin: 0px 0px 22px 0px;
-        }
-    
-        #entertainments article h4 {
-            width: 340px;
-            top: 115px;
-        }
-    
-        #entertain_port img {
-            width: 100%;
-            left: 0px;
-        }
-    
-        #entertain_fort img {
-            max-width: 100%;
-            top: -165px;
-        }
-        
-        #entertain_calanques img {
-            width: 100%;
-            left: 0px;
-        }
-    
-        #entertain_garde img {
-            max-width: 100%;
-            top: -15px;
-        }
-    
-        #entertain_longchamp img {
-            max-width: 100%;
-            top: -35px;
-        }
+    #entertain_calanques img {
+        width: 100%;
+        left: 0px;
+    }
+
+    #entertain_garde img {
+        max-width: 100%;
+        top: -15px;
+    }
+
+    #entertain_longchamp img {
+        max-width: 100%;
+        top: -35px;
+    }
 
     #entertainments_container div:nth-child(2), #entertainments_container div:nth-child(4) {
         flex-direction: row;
