@@ -61,12 +61,14 @@ header {
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
+    margin-top: 16px;
 }
 
 header img {
     margin: auto;
-    margin-top: 50px;
+    margin-top: 34px;
     margin-left: 0px;
+    margin-bottom: 16px;
 }
 
 nav ul {
