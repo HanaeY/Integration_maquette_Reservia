@@ -663,13 +663,14 @@ petit mobile (max 320px)*/
     /* hébergements populaires */ 
 
     aside {
-        max-width: 1060px;
+        width: 100%; 
+        margin: auto; 
     }
 
     #popular_accomodation_container {
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: flex-start;
+        justify-content: space-around;
     }
 
     aside article {
@@ -685,7 +686,8 @@ petit mobile (max 320px)*/
     /* hébergements résultats */
 
     #accomodation_results {
-        max-width: 956px;
+        width: 100%; 
+        margin: auto; 
     }
 
     #accomodation_results, #accomodation_results button {
@@ -694,7 +696,7 @@ petit mobile (max 320px)*/
 
     #accomodation_results_container {
         width: 100%;
-        justify-content: flex-start;
+        justify-content: space-around;
     }
 
     #accomodation_results article {
@@ -732,7 +734,7 @@ petit mobile (max 320px)*/
     /* activités */
 
     #entertainments_container {
-        justify-content: flex-start;
+        justify-content: space-around;
     }
 
     #entertainments article {
@@ -766,6 +768,21 @@ petit mobile (max 320px)*/
     }
 }
 
+@media all and (max-width: 1092px) and (min-width: 1025px) {
+    #popular_accomodation_container {
+        justify-content: flex-start;
+        width: 655px;
+        margin: auto;
+    }
+}
+
+@media all and (max-width: 1317px) and (min-width: 1025px){
+    #entertainments_container div:nth-child(4) {
+        flex-direction: row;
+        flex: 0.7;
+    }
+}
+
 /******************** tablette paysage ********************/
 
 @media all and (max-width: 1024px) {
@@ -776,7 +793,7 @@ petit mobile (max 320px)*/
         width: 100%;
     }
 
-    header p, h1, #subtitle, #filters, #info, #entertainments h2, #search_bar, #popular_accomodation_container, #accomodation_results, #entertainments_container {
+    header p, h1, #subtitle, #filters, #info, #entertainments h2, #search_bar {
         margin-left: 20px;
         margin-right: 20px;
     }
@@ -803,10 +820,6 @@ petit mobile (max 320px)*/
     #aside_title {
         width: 265px;
     }
-    
-    #popular_accomodation_container {
-        justify-content: space-between;
-    }
 
     aside article {
         margin-right: 0px;
@@ -818,12 +831,8 @@ petit mobile (max 320px)*/
     }
 
     #accomodation_results h3 {
-        margin-left: 0px;
+        margin-left: 20px;
         margin-top: 0px;
-    }
-
-    #accomodation_results_container {
-        justify-content: space-between;
     }
 
     #accomodation_results article {
@@ -841,10 +850,6 @@ petit mobile (max 320px)*/
 
         #entertainments h2 {
             margin-bottom: 10px;
-        }
-    
-        #entertainments_container {
-            justify-content: space-between;
         }
     
         #entertainments article {
@@ -885,11 +890,11 @@ petit mobile (max 320px)*/
 
     #entertainments_container div:nth-child(2), #entertainments_container div:nth-child(4) {
         flex-direction: row;
-        flex: 2;
+        flex: 0.77;
     }
 
     #entertainments_container a:nth-child(1), #entertainments_container a:nth-child(3) {
-        flex: 1;
+        flex: 0.15;
     }
 }
 
@@ -925,11 +930,6 @@ petit mobile (max 320px)*/
 
     #info {
         margin-top: 0px;
-    }
-    /* section hébergements */
-
-    #popular_accomodation_container, #accomodation_results_container {
-        justify-content: flex-start;
     }
 
     /* footer */ 
