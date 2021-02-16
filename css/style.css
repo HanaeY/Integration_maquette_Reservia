@@ -781,7 +781,7 @@ petit mobile (max 320px)*/
         width: 100%;
     }
 
-    header p, h1, #subtitle, #filters, #info, #entertainments h2, #search_bar {
+    header p, h1, #subtitle, #filters, #info, #entertainments h2, #search_bar, #entertainments {
         margin-left: 20px;
         margin-right: 20px;
     }
@@ -875,11 +875,11 @@ petit mobile (max 320px)*/
 
     #entertainments_container div:nth-child(2), #entertainments_container div:nth-child(4) {
         flex-direction: row;
-        flex: 0.77;
+        flex: 2;
     }
 
     #entertainments_container a:nth-child(1), #entertainments_container a:nth-child(3) {
-        flex: 0.15;
+        flex: 1;
     }
 }
 
@@ -1089,6 +1089,10 @@ petit mobile (max 320px)*/
 
     #entertainments h2 {
         margin-bottom: 10px;
+    }
+
+    #entertainments {
+        margin: 0px;
     }
 
     #entertainments_container {
