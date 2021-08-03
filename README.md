@@ -17,3 +17,6 @@ Compétences mises à profit :
 * Visual Studio Code
 * Git bash
 * Photoshop (découpage de la maquette)
+
+# Voir le résultat
+https://hanaey.github.io/Integration_maquette_Reservia/
