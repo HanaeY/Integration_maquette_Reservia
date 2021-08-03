@@ -14,6 +14,6 @@ Compétences mises à profit :
 * CSS
 
 # Outils
-Visual Studio Code
-Git bash
-Photoshop (découpage de la maquette)
+* Visual Studio Code
+* Git bash
+* Photoshop (découpage de la maquette)
